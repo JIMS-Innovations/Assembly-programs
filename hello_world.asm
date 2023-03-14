@@ -14,9 +14,9 @@ section .text
 
 	_start:
 		mov	rax,1					; System write
-		mov rdi,1					; stdout
-		mov rsi,hello				; Message to write
-		mov rdx,helloLen			; Message length
+		mov	rdi,1					; stdout
+		mov	rsi,hello				; Message to write
+		mov	rdx,helloLen			; Message length
 		syscall						; Call kernel
 
 		; End program
